@@ -15,8 +15,8 @@
     "url": "git+https://github.com/edman-cota/custom-react-tooltip.git"
   },
   "keywords": ["react", "tooltip", "typescript", "custom"],
-  "author": "EdmanUVG",
-  "license": "ISC",
+  "author": "edman-cota",
+  "license": "MIT",
   "devDependencies": {
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
