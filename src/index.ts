@@ -1,3 +1,3 @@
-import Tooltip from './components/Tooltip'
+import Tooltip from './Tooltip'
 
 export { Tooltip }

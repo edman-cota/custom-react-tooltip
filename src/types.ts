@@ -1,6 +1,12 @@
 import React, { ReactElement } from 'react'
 
-export type Placement = 'top' | 'right' | 'bottom' | 'left'
+export type Alignment = 'start' | 'end'
+export type Side = 'top' | 'right' | 'bottom' | 'left'
+export type AlignedPlacement = `${Side}-${Alignment}`
+export type Placement = Side | AlignedPlacement
+
+export type Boundary = any
+export type RootBoundary = 'viewport' | 'document'
 
 export enum borderRadius {
   none = '0',
@@ -28,7 +34,7 @@ export interface TooltipProps {
   /**
    * The distance or margin between the reference and the tooltip.
    */
-  space?: number
+  offset?: number
   /**
    * Custom background color for the tooltip
    */
@@ -39,4 +45,5 @@ export interface TooltipProps {
   disabled?: number
   delay?: number
   command?: string
+  args: any
 }
