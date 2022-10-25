@@ -40,10 +40,19 @@ export interface TooltipProps {
    */
   bg?: string
 
+  variant?: 'solid' | 'subtle'
+
   borderRadius?: string
 
   disabled?: number
+
   delay?: number
+
   command?: string
+
+  commandColor?: string
+
+  commandBg?: string
+
   args: any
 }

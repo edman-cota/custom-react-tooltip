@@ -85,7 +85,6 @@ export const computePostion = (referenceElement: any, floatingElement: any, plac
     // restric to rect boundry
     pt.restrictRect(boundary)
 
-    console.log('points: ', pt)
     return pt
   })(placement)
 }
